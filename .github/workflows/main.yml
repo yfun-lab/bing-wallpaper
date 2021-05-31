@@ -23,8 +23,10 @@ jobs:
         python main.py
         
 
-    - name: action-push
+    - name: Push
       run: |
-        git add .
+        git config --global user.email "icolabot@e.yfun.top"
+        git config --global user.name "iColaBot"
+        git add -A
         git commit -m "Update Bing Wallpaper"
         git push origin master
