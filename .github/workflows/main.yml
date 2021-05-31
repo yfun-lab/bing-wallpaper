@@ -1,0 +1,28 @@
+name: Update Screenshot
+on: 
+  schedule:
+    - cron: '0 16 * * *'
+  push:
+    branches: 
+      - master
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+    - name: Setup Python
+      uses: actions/setup-python@v2.2.2
+      with:
+      # Used to pull python distributions from actions/python-versions. Since there's a default, this is typically not supplied by the user.
+        token: ${{ github.token }} # optional, default is ${{ github.token }}
+    - name: Download
+      run: |
+        python main.py
+
+    - name: action-push
+      # You may pin to the exact commit or the version.
+      # uses: ludeeus/action-push@0b7c1175655379c008f42bbaf524caa79cf89ec1
+      uses: ludeeus/action-push@0.0.1
