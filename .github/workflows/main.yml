@@ -28,5 +28,5 @@ jobs:
         git config --global user.email "icolabot@e.yfun.top"
         git config --global user.name "iColaBot"
         git add -A
-        git commit -m "Update Bing Wallpaper"
+        git commit --allow-empty -m "Update Bing Wallpaper"
         git push origin master
