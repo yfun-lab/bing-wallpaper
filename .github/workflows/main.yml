@@ -2,9 +2,6 @@ name: Update Screenshot
 on: 
   schedule:
     - cron: '0 16 * * *'
-  push:
-    branches: 
-      - master
 
 jobs:
   download:
