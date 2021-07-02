@@ -1,0 +1,20 @@
+{
+  "name": "@ocoke/bing-wallpaper",
+  "version": "1.0.0",
+  "description": "Bing Wallpaper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yfun-lab/bing-wallpaper.git"
+  },
+  "keywords": [
+    "bing",
+    "wallpaper",
+    "bing-wallpaper"
+  ],
+  "author": "YFun <awa@outlook.ie> (@oCoke)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yfun-lab/bing-wallpaper/issues"
+  },
+  "homepage": "https://github.com/yfun-lab/bing-wallpaper#readme"
+}
