@@ -26,4 +26,5 @@ jobs:
         git config --global user.name "iColaBot"
         git add -A
         git commit --allow-empty -m "Update Bing Wallpaper"
+        git pull origin master
         git push origin master
