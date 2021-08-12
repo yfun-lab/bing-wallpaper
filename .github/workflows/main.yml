@@ -1,7 +1,7 @@
 name: Update Screenshot
 on: 
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   download:
